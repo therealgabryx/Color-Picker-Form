@@ -15,12 +15,12 @@
 
     <p>Selezionare un colore per modificare il testo e lo sfondo del paragrafo:</p>
 
-    <form id="colorForm" name="colorForm" onsubmit="return color()">
+    <form id="colorForm" name="colorForm" onsubmit="return false">
         <label for="backgrcolor">background:</label><br>
         <input type="color" id="backgrcolor" name="backgrcolor" value="#ffffff"><br><br>
         <label for="textcolor">text:</label><br>
         <input type="color" id="textcolor" name="textcolor" value="#000000"><br><br>
-        <input type="submit" name="invia" />
+        <button type="button" name="invia" onclick="color()">Invia</button>
     </form>
 
     <br>

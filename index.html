@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>JS Example</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Color Picker</h1>
+
+    <p>Selezionare un colore per modificare il testo e lo sfondo del paragrafo:</p>
+
+    <form id="colorForm" name="colorForm" onsubmit="return color()">
+        <label for="backgrcolor">background:</label><br>
+        <input type="color" id="backgrcolor" name="backgrcolor" value="#ffffff"><br><br>
+        <label for="textcolor">text:</label><br>
+        <input type="color" id="textcolor" name="textcolor" value="#000000"><br><br>
+        <input type="submit" name="invia" />
+    </form>
+
+    <br>
+
+    <div id="exampleText">
+        <h3>Dummy Paragraph</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>
+        <br>  
+        </p>
+    </div>
+    
+  </div>
+</body>
+
+</html>
